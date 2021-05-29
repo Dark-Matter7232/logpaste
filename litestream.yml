@@ -1,7 +1,11 @@
 access-key-id: ${LITESTREAM_ACCESS_KEY_ID}
 secret-access-key: ${LITESTREAM_SECRET_ACCESS_KEY}
 dbs:
-  - path: ${DB_PATH}
+  - path: /app/data/store.db
     replicas:
-      - url: ${DB_REPLICA_URL}
+      - type: s3
+        bucket: mypaste
+        path: .
+        endpoint: https://s3.fr-par.scw.cloud
+        region: fr.par
         sync-interval: ${DB_SYNC_INTERVAL}
