@@ -67,7 +67,7 @@ if [[ "${IS_LITESTREAM_ENABLED}" == 'true' ]]; then
   # Begin replication to S3 in the background.
   # Note: It would be nicer to use the systemd service, but systemd
   # is trickier within Docker.
-  litestream replicate "${DB_PATH}" &
+  litestream replicate "${DB_PATH}" "${DB_REPLICA_URL}" &
 fi
 
 # Start server.
