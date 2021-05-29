@@ -43,7 +43,7 @@ is_litestream_enabled() {
 
   if [[ ! -z "${LITESTREAM_ACCESS_KEY_ID}" ]] && \
       [[ ! -z "${LITESTREAM_SECRET_ACCESS_KEY}" ]] && \
-      [[ ! -z "${LITESTREAM_REGION}" ]]; then
+      [[ -z "${LITESTREAM_REGION}" ]]; then
     IS_ENABLED='true';
   fi
 
