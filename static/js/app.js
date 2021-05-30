@@ -6,8 +6,10 @@ const curlCmd = document.getElementById("curl-cmd");
 if (curlCmd) {
   curlCmd.innerHTML = Prism.highlight(
     `
-echo "some text I want to upload" | \\
-  curl -F '_=<-' ${baseUrl}`.trim(),
+pu() {
+    [ -s "$1" ] && { curl -F "_=@$@" https://p.anuragcodes.me; return 0; }
+    curl -F '_=<-' https://p.anuragcodes.me
+}`.trim(),
     Prism.languages.bash,
     "bash"
   );
