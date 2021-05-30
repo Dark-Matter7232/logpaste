@@ -8,4 +8,4 @@ dbs:
         path: .
         endpoint: https://s3.fr-par.scw.cloud
         region: fr-par
-        sync-interval: 10s
+        sync-interval: 3600s
