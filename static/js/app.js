@@ -7,8 +7,8 @@ if (curlCmd) {
   curlCmd.innerHTML = Prism.highlight(
     `
 pu() {
-    [ -s "$1" ] && { curl -F "_=@$@" https://p.anuragcodes.me; return 0; }
-    curl -F '_=<-' https://p.anuragcodes.me
+    [ -s "$1" ] && { curl -F "_=@$@" ${baseUrl}; return 0; }
+    curl -F '_=<-' ${baseURl}
 }`.trim(),
     Prism.languages.bash,
     "bash"
