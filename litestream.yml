@@ -4,8 +4,7 @@ dbs:
   - path: /app/data/store.db
     replicas:
       - type: s3
-        bucket: mypaste
+        bucket: KodyKBin
         path: .
         endpoint: https://s3.filebase.com
-        region: fr-par
         sync-interval: 21600s
