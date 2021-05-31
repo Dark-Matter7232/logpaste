@@ -6,6 +6,6 @@ dbs:
       - type: s3
         bucket: mypaste
         path: .
-        endpoint: https://s3.fr-par.scw.cloud
+        endpoint: https://s3.filebase.com
         region: fr-par
         sync-interval: 21600s
