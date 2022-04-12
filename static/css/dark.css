@@ -1,29 +1,29 @@
 body {
-  background: #121212;
-  color: #f0f0f0;
+  background: #282a36;
+  color: #f66;
 }
 
 a {
-  color: #009e1a;
+  color: #ffa64d;
 }
 
 textarea {
-  background: #808080;
+background: #252727;
+    color: #ffa64d;
 }
 
 button {
-  background-color: #2455a3;
-  color: #f0f0f0;
-  border-color: #648ed1;
+  background-color: #f66;
+  color: #ffffff;
 }
 
 button:hover {
-  background-color: #2e66bf;
+  background-color: #b73535;
 }
 
 pre {
-  background: #424242;
-  border-color: #c7c7c7;
+background: #252727;
+    color: #ffa64d;
 }
 
 #upload-textarea {
@@ -31,8 +31,8 @@ pre {
 }
 
 #result {
-  background-color: #454270;
-  border-color: #6d68b0;
+  background: #282a36;
+  color: #f66;
 }
 
 #form-upload-error {
