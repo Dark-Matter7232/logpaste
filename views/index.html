@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
     <title>{{.Title}}</title>
     {{ if .ShowDocs }}
     <link
@@ -39,11 +40,7 @@
       <div class="documentation">
         <div class="bash-example">
           <h2>Upload from the command line</h2>
-          <p>Upload text:</p>
           <pre><code id="curl-cmd" class="language-bash"></code></pre>
-
-          <p>Upload a file's contents:</p>
-          <pre><code id="curl-file-cmd" class="language-bash"></code></pre>
         </div>
 
         <div class="js-example">
@@ -53,22 +50,6 @@
         </div>
       </div>
       {{ end }}
-
-      <div id="more-info">
-        <h2>Source code</h2>
-        <p>
-          {{ .Title }}'s source is available under the MIT License and easy to
-          self-host.
-        </p>
-        <ul>
-          <li>
-            <a href="https://github.com/mtlynch/logpaste"
-              >https://github.com/mtlynch/logpaste</a
-            >
-          </li>
-        </ul>
-      </div>
-
       <!-- prettier-ignore-start -->
       {{ if .FooterHTML }}
       <div class="footer">
